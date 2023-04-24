@@ -91,3 +91,28 @@ body{
 
 /* WEB RESPONSIVE */
 
+@media (max-width:320px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul li a{
+        color: #000;
+        text-decoration: none;
+        margin: 15px;
+        margin-right: 50px;
+        font-size: 15px;
+    }
+
+    header .iconos{
+        display: none;
+    }
+
+    #kali img{
+        height: 100px;
+        width: 100px;   
+    }
+
+}   
