@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Roboto;
+    src: url(src/Roboto-Light.ttf);
+  }
+
+*{
+    font-family: Roboto;
+}
+
+/* ----------- HEADER ----------- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    
+}
+
+header h1{
+    color: #000;
+    text-shadow: 1px 1px 2px black;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+header nav ul li a{
+    color: #000;
+    text-decoration: none;
+    margin: 15px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+
+header nav ul li a:hover{
+    color: rgb(206, 206, 221);
+}
+
+header .iconos{
+    display: flex;
+    margin-right: 5%;
+}
+
+header .iconos img{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    
+}
+
+header .iconos img:hover{
+    transform: scale(1.5);
+}
+
+/* CONTENT */
+
+body{
+    background: linear-gradient(to left,#76943e, #524439);
+}   
+
+#kali{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#kali p{
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(236, 221, 221);
+}
+
+#kali img{
+    border: 2px solid rgb(17, 17, 24);
+    border-radius: 5px;
+}
+
+#kali p a{
+    color:#2d505c;
+}
+
+#kali h2{
+    text-shadow: 1px 1px 2px black;
+}

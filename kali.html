@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name='author' content='Pedro Jimenez Zamorano' />
+    <meta name='description' content='Blog de ciberseguridad' />
+    <meta name='keywords' content='Ciberseguridad, Hacking, Pentesting, Kali Linux, Linux, instalación' />
+    <meta property='og:title' content='Noticias y tutoriales ciberseguridad'/>
+    <link rel="stylesheet" href="src/styleKali.css">
+    <title>CyberBlocked Instalar Kali</title>
+</head>
+<body>
+    <header>
+        <h1>CyberBlocked</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Herramientas</a></li>
+            </ul>
+        </nav>
+        <div class="iconos">
+            <a href="https://www.linkedin.com/in/pedro-jimenez-zamorano-5b3825273/"><img src="src/img/linkedin.png" alt="icon Linkedin"></a>
+            <a href="https://github.com/JimenezPedro"><img src="src/img/github.png" alt="icon Github"></a>
+        </div>
+    </header>
+    <hr>
+    <section id="kali">
+        <div class="tutorial">
+            <h2>Instalar Kali Linux</h2>
+            <p>
+                Si queremos instalar Kali Linux ya sea en una maquina virtual(Recomendable para principiantes) o un ordenador,
+                debemos descargar primero la imagen ISO del sistema operativo, os adjunto un enlace directo a la zona
+                de descargas de la página: pinchando <a href="https://www.kali.org/get-kali/#kali-installer-images">aquí</a>
+            </p>       
+            <img src="src/img/Captura 1- sitio descarga.PNG" alt="Captura del sitio de descarga">
+            <p>
+                Una vez descargado Kali Linux, procedemos a instalarlo, yo lo voy a hacer en una máquina virtual,
+                lo recomiendo para personas principiantes que aún no tengan un manejo fluído de la terminal de Linux
+                y otros conceptos importantes, si vas a dar el salto de Windows a un sistema operativo como Linux, existen otras distribuciones
+                más simples y fáciles de manejar ya sea Ubuntu o Fedora, en caso de que vayas a instalarlo en tu ordenador, la instalación viene a ser lo mismo...
+                solo que necesitarás de una unidad de almacenamiento externo tipo USB para "bootearla" y que al arrancar tu pc con esta unidad 
+                detecte el programa de instalación de Kali.
+            </p> 
+            <p>
+                Bien, ¡manos a la obra! Para instalar Kali en una máquina virtual, usaremos VirtualBox por ejemplo
+                aunque hay otros programas como VMware.
+
+                Lo primero será añadir una nueva máquina:
+            </p>
+            <img src="src/img/Captura 2 - Creación de la máquina virtual.PNG" alt="Captura del programa VirtualBox">
+            <p>
+                Pinchando en máquina y después en nueva nos aparecera el siguiente recuadro:
+            </p>
+            <img src="src/img/Captura 3 -Creación de la máquina virtual 2.PNG" alt="Captura del programa VirtualBox">
+            <p>
+                En esta ventana pondremos el nombre que queramos a nuestra máquina y seleccionaremos donde queremos que se
+                guarde, yo recomiendo dejar la carpeta que crea por defecto VirtualBox, por último y más importante seleccionaremos la imagen ISO que descargamos previamente.
+            </p>
+            <img src="src/img/Captura 4 - Creación de la máquina virtual 3.PNG" alt="Captura del programa VirtualBox">
+            <p>
+                Al pinchar en siguiente aparece este recuadro para asignarle la memoria RAM a nuestra MV(máquina virtual)
+                yo he dejado la que viene por defecto asignada, suele poner una cantidad de Gbs según la RAM que tengas en tu ordenador.
+                Una vez hemos asignado la RAM que tendrá nuestra MV procedemos a pinchar en siguiente
+            </p>
+            <img src="src/img/Captura 5 - Creación de la máquina virtual 4.PNG" alt="Captura del programa VirtualBox">
+            <p>
+                Podemos observar que en este recuadro ocurre lo mismo pero con el espacio de la MV,seleccionaremos la primera opción y yo voy a ponerle 50Gb pero podeis poner
+                lo que querais realmente, pero siempre será mejor que os sobre que os falte.
+            </p>
+            <img src="src/img/Captura 6 - Creación de la máquina virtual 5.PNG" alt="Captura del programa VirtualBox">
+            <p>Ya solo queda pinchar en terminar e iniciar la instalación</p>
+            <img src="src/img/Captura 7 - Comrpobación.PNG" alt="Captura del programa VirtualBox">
+            <p>
+                Como podeis observar ya nos aparece nuestra MV creada y disponible para abrir, justo eso vamos a hacer:
+            </p>
+            <img src="src/img/Captura 8 - Instalación 1.PNG" alt="Captura sobre la instalación">
+            <p>
+                Al iniciar nuestra MV aparecerá un menú donde seleccionaremos la instalación gráfica de Kali Linux, es decir
+                la primera opción del mismo.
+            </p>
+            <img src="src/img/Captura 9 - Instalación 2.PNG" alt="Captura sobre la instalación">
+            <p>
+                Y da comienzo la instalación, este proceso es simple, en esta primera ventana buscaremos el idioma que queremos 
+                en mi caso Español de España y pulsamos continuar
+            </p>
+            <img src="src/img/Captura 10 - Instalación 3.PNG" alt="Captura sobre la instalación">
+            <p>
+                Una vez seleccionado el idioma de nuestra máquina y del teclado, nos aparecerá la siguiente barra de carga,
+                esperamos a que termine y podamos seguir con la instalación
+            </p>
+            <img src="src/img/Captura 11 - Instalación 4.PNG" alt="Captura sobre la instalación">
+            <p>
+                Aquí escribimos un nombre para nuestra máquina, yo voy a dejar el que viene por defecto "kali" y pincho
+                en continuar
+            </p>
+            <img src="src/img/Captura 12 - Instalación 5.PNG" alt="Captura sobre la instalación">
+            <p>
+                Esta ventana es para escribir nuestro dominio, en mi caso la voy a dejar vacía pero vosotros podeis
+                rellenarla con vuestro dominio, le doy a continuar pues.
+            </p>
+            <img src="src/img/Captura 13 - Instalación 6.PNG" alt="Captura sobre la instalación">
+            <p>
+                Nos piden ahora un nombre completo, en mi caso he escrito mi nombre y primer apellido
+            </p>
+            <img src="src/img/Captura 14 - Instalación 7.PNG" alt="Captura sobre la instalación">
+            <p>
+                Esta parte de la instalación es importante, es nuestro nombre de usuario, elige uno sencillo y fácil de escribir,
+                lo agradecerás más tarde.
+            </p>
+            <img src="src/img/Captura 15 - Instalación 8.PNG" alt="Captura sobre la instalación">
+            <p>
+                La contraseña es algo muy importante, yo he escrito esta de ejemplo, vosotros escribid una segura, la contraseña es importante
+                porque a la hora de acceder en la terminal como root o admin, nos la va a pedir.
+            </p>
+            <img src="src/img/Captura 16 - Instalación 9.PNG" alt="Captura sobre la instalación">
+            <p>
+                Sobre la configuración del reloj, elegid la que más os convenga según el sitio donde vivais.
+            </p>
+            <img src="src/img/Captura 17 - Instalación 10.PNG" alt="Captura sobre la instalación">
+            <p>
+                Esta opción que nos da ahora es la de usar todo el disco, particionarlo de manera automática o de manera manual,
+                si sois principiantes os aconsejo la primera opción, ya que os instalará Kali en el disco y no tendreis que saber nada más...
+            </p>
+            <img src="src/img/Captura 18 - Instalación 11.PNG" alt="Captura sobre la instalación">
+            <p>
+                Aquí nos aparece el disco que se ha elegido para instalar nuestro sistema operativo, en caso de tener varios discos duros, elegid siempre el más rápido y que tenga un espacio que soporte sin problema el sistema.
+            </p>
+            <img src="src/img/Captura 19 - Instalación 12.PNG" alt="Captura sobre la instalación">
+            <p>
+                En este paso nos lo dice muy claro, si eres novato pon todo en una sola partición, en caso de no serlo ya sabes
+                que puedes particionar este disco en distintas partes según desees, pero al final si estás haciendo la instalación en una MV
+                te recomiendo que no te líes haciendo particiones ni nada.
+            </p>
+            <img src="src/img/Captura 20 - Instalación 13.PNG" alt="Captura sobre la instalación">
+            <p>
+                Aquí te muestra un resumen de tu instalación 
+            </p>
+            <img src="src/img/Captura 21 - Instalación 14.PNG" alt="Captura sobre la instalación">
+            <p>
+                Por último seleccionamos la opción si para escribir los cambios en los discos y empezará un proceso que tardará un rato.
+                Esto es la instalación del sistema operativo.
+            </p>
+            <img src="src/img/Captura 22 - Instalación 15.PNG" alt="Captura sobre la instalación">
+            <p>
+                Nos encontramos en los últimos pasos, el sistema ya está instalado y nos pide que elijamos un "Desktop environment",
+                esto ya es cuestión de gustos, a mi me gusta KDE plasma y Xfce, seleccionad el que os guste aunque no va a suponer un cambio en cuanto al contenido,
+                esto es en relación al aspecto, en mi caso dejo Xfce marcado y la colección de herramientas también marcada, esto es para que nuestro Kali
+                venga con herramientas de ciberseguridad y hacking ya instaladas por defecto.
+            </p>
+            <img src="src/img/Captura 23 - Instalación 16.PNG" alt="Captura sobre la instalación">
+            <p>
+                Ahora procederá con la instalación de los programas que hemos seleccionado.
+            </p>
+            <img src="src/img/Captura 24 - Instalación 17.PNG" alt="Captura sobre la instalación">
+            <p>
+                Aquí nos da la opción de instalar "GRUB", es una herramienta bastante útil, en este caso nos dice que solo tenemos un sistema operativo instalado y 
+                que no hay riesgo a la hora de instalarlo, procedemos dando en si y continuamos con la instalación.
+            </p>
+            <img src="src/img/Captura 25 - Instalación 18.PNG" alt="Captura sobre la instalación">
+            <p>
+                Seleccionamos nuestra unidad principal para el arranque y pulsamos continuar.
+            </p>
+            <img src="src/img/Captura 26 - Instalación 19.PNG" alt="Captura sobre la instalación">
+            <p>
+                Por último reiniciamos y ya tenemos nuestro Kali instalado y listo para disfrutarlo
+            </p>
+            <img src="src/img/Captura 27 - Instalación 20.PNG" alt="Captura sobre la instalación">
+        </div>
+    </section>
+</body>
+</html>
