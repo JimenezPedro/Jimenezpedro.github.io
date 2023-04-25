@@ -91,7 +91,7 @@ body{
 
 /* WEB RESPONSIVE */
 
-@media (max-width:320px) {
+@media (max-width:667px) {
 
     header{
         display: flex;
