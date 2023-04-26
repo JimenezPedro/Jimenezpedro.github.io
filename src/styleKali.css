@@ -74,11 +74,13 @@ body{
     border: 2px solid black;
     border-radius: 10px;
     background-color: rgb(236, 221, 221);
+    width: 750px;
 }
 
 #kali img{
     border: 2px solid rgb(17, 17, 24);
     border-radius: 5px;
+    width: 800px;
 }
 
 #kali p a{
@@ -113,6 +115,14 @@ body{
     #kali img{
         height: 400px;
         width: 400px;   
+    }
+
+    #kali p{
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: rgb(236, 221, 221);
+        width: 350px;
     }
 
 }   
